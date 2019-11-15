@@ -11,14 +11,14 @@ function validarCamposObligatorios() {
 
           }
 
-             if (elemento.id == 'nombres') {
+             if (elemento.id == 'nombre') {
                 nombres = elemento.id.value;
                 elemento.style.border = "1px red solid"
                 document.getElementById("mensajeNombres").innerHTML = "El campo es obligatorio"
                 document.getElementById("mensajeNombres").style.color = "red"
             }
 
-            if (elemento.id == 'apellidos') {
+            if (elemento.id == 'apellido') {
                 apellidos = elemento.id.value;
                 elemento.style.border = "1px red solid"
                 document.getElementById("mensajeApellidos").innerHTML = "El campo es obligatorio"
@@ -34,7 +34,7 @@ function validarCamposObligatorios() {
                 document.getElementById("mensajeTelefono").innerHTML = "El campo es obligatorio"
                 document.getElementById("mensajeTelefono").style.color = "red"
             }
-            if (elemento.id == 'fechaNacimiento') {
+            if (elemento.id == 'fecha') {
                 elemento.style.border = "1px red solid"
                 document.getElementById("mensajeFecha").innerHTML = "El campo es obligatorio"
                 document.getElementById("mensajeFecha").style.color = "red"

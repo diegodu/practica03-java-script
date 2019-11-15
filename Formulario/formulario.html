@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/generales.css">
     <title>Contacto</title>
+    <script type="text/javascript" src="validacion.js"></script>
 </head>
 
 <body>
@@ -14,24 +15,37 @@
            
         <div class="formulario">
                 <h1>Contacto</h1>
-            <form  method="post" action="" onload="init()">
-                <input type="text" placeholder="Cedula" value="" id="cedula">
+            <form  id="formulario01" method="post" action="" onsubmit="return validarCamposObligatorios()">
+                <input type="text" id="cedula" name="cedula" value="" maxlength="10"
+                placeholder="Cedula" onkeypress="ValidarNumeros(event,'mensajeCedula',this)" />
+                <span size=4 id="mensajeCedula"></span>
                 <span id="mensajecedula"></span>
-                <input type="text" placeholder="Nombre" value="" id="nombre">
-                <span id="mensajenombre"></span>
-                <input type="text" placeholder="Apellido" value="" id="apellido">
+                <input type="text" placeholder="Nombre" value="" id="nombre"
+                onkeypress="ValidarLetras(event,'mensajeNombres',this)">
+                <span id="mensajeNombres"></span>
+                <input type="text" placeholder="Apellido" value="" id="apellido"
+                onkeypress="ValidarLetras(event,'mensajeApellidos',this)">
+                <span id="mensajeApellidos"></span>
                 <input type="text" placeholder="Direccion" value="" id="direccion">
-                <input type="text" placeholder="Telefono" value="" id="telefono">
+                <span id="mensajeDireccion"></span>
+                <input type="text" placeholder="Telefono" value="" id="telefono"
+                onkeypress="ValidarTelefono(event,'mensajeTelefono',this)">
+                <span id="mensajeTelefono"></span>
                 <input type="text" placeholder="Fecha de Nacimiento" value="" id="fecha">
-                <input type="text" placeholder="Correo" value="" id="correo">
+                <span id="mensajeFecha"></span>
+                <input type="text" placeholder="Correo" value="" id="correo"
+                onkeypress="ValidarCorreo(event,'mensajeCorreo',this)">
+                <span id="mensajeCorreo"></span>
                 <input type="password" placeholder="Contraseña" value="" id="contrasena">
-                <input type="button" value="ENVIAR" id="boton" >
+                <div class="form_boton"> 
+                    <input type="submit" class="ingresar" id="crear" name="crear" value="Aceptar" />
+            </div>
                 
             
             </form>
         </div>
     </div>
-    <script src="validar.js"></script>
+  
   
    
 </body>
