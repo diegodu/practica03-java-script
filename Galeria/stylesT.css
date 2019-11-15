@@ -30,7 +30,7 @@ body{
 }
 
 .cont{
-    background-image: url(fondo1.jpg);
+   
     display: flex;
 	justify-content: space-around;
     margin-top: 1rem;
@@ -38,9 +38,7 @@ body{
 }
 
 .cont1{
-    border: white 8px outset; 
-
-    background-image: url(fondo2.jpg);
+  
     display: flex;
 	justify-content: space-around;
     margin-top: 1rem;
@@ -49,15 +47,18 @@ body{
 
 h1{
     color: aliceblue;
+    list-style-type: georgian;
 }
 
 .input, .anterior, .iniciar, .siguiente{
-	background-color:yellow;
-	padding: .5rem;
-	margin: .5rem 0;
+    background-color:red;
+    color: white;
+	
+    width: 100px;
+    height: 50px;
+    border-radius: 1rem;
 	border: none;
-	border-bottom: solid #C8C8C8 .2rem;
-	transition: all .5s;
+	
 }
 
 .anterior:hover {
@@ -66,7 +67,10 @@ h1{
 }
 
 .anterior{
-    background-color: teal;
+    background-color:yellow;
+    color: white;
+    width: 100px;
+    height: 50px;
     border-radius: 1rem;
     color: rgb(0, 0, 0);;
 
@@ -74,7 +78,7 @@ h1{
 
 .iniciar:hover{
     cursor: pointer;
-	background-color: rgb(13, 111, 185);
+	background-color: rgb(236, 248, 246);
 }
 
 .siguiente:hover{
@@ -83,7 +87,10 @@ h1{
 }
 
 .siguiente{
-    background-color: teal;
+    background-color: yellow;
+    color: white;
+    width: 100px;
+    height: 50px;
     border-radius: 1rem;
     color: rgb(0, 0, 0);
 
