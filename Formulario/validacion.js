@@ -52,7 +52,13 @@ function validarCamposObligatorios() {
 
     
     if (bandera) { 
-        alert(' CAMPOS VACIOS! Rellenar los campos')
+        document.getElementById("mensajeCedula").innerHTML = "Campo vacio"
+        document.getElementById("mensajeNombres").innerHTML = "Campo vacio"
+        document.getElementById("mensajeApellidos").innerHTML = "Campo vacio"
+        document.getElementById("mensajeDireccion").innerHTML = "Campo vacio"
+        document.getElementById("mensajeTelefono").innerHTML = "Campo vacio"
+        document.getElementById("mensajeFecha").innerHTML = "Campo vacio"
+        document.getElementById("mensajeCorreo").innerHTML = "Campo vacio"
         return false;
     } else {
             return true;
